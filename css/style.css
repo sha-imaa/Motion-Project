@@ -1,0 +1,171 @@
+          
+          /* General syntax */
+body
+{
+    margin:0 auto;
+    width:90%
+}
+
+header
+{
+    clear:both
+}
+
+h1
+{
+   position:absolute;
+   top:120px;
+   right:360px;
+   color:#fff;
+   font-size:35px;
+   white-space:pre-line;
+   line-height:12px;
+   word-spacing:15px
+   
+}
+             /* Header's site */
+             
+.logoNav
+{
+    width:100%;
+    height:100px;
+    background-color:#ec927c;
+    
+}
+.logoNav div
+{
+    position:absolute;
+    transition: all ease-in-out .6s;
+    
+}
+
+.logoNav div:hover
+{
+    transform: scale(1.1,1.1);
+    cursor:pointer;
+    opacity:.8
+}
+
+.logoNav img
+{
+   position:relative;
+   left:190px;
+   top:20px
+}
+.logoNav p
+{
+    color:#fff;
+    font-size:30px;
+    font-family:sans-serif;
+    float:right;
+    width:95%;
+    line-height:14px;
+    position:relative;
+    left:230px;
+    bottom:54px
+}
+.logoNav span
+{
+    font-size:15px;
+    white-space: pre-line
+}
+
+
+ul
+{
+   list-style-type:none;
+   margin-left:480px;
+   
+}
+
+ul li 
+{
+   display:inline-block;
+    margin-top:40px
+   
+
+}
+
+ul li a
+{
+      text-decoration:none;
+      padding:20px;
+      color:#fff;
+      font-size:20px;
+      font-weight:bold;
+      transition:all .4s ease-in-out;
+      position:relative
+}
+ul li a:after{
+   content:"";
+   display:inline-block;
+   position:absolute;
+   left:0px;
+   bottom:-1px;
+   width:0;
+   height:3px;
+   background-color:#fff;
+   transition:all ease-in-out 
+}
+ul li a:hover:after{
+   width:100%
+}
+
+.activeLink:after
+{
+   content:"";
+   display:inline-block;
+   position:absolute;
+   left:0px;
+   bottom:-1px;
+   width:100%;
+   height:3px;
+   background-color:#fff;
+   transition:all ease-in-out 
+}
+                    /* Slider Section  */
+                    
+ .welcomeSlider
+ {
+   width:100%;
+   background-color:#db684c;
+   height:600px
+ }
+ 
+ .welcomeSlider img
+ {
+   margin:150px 0 0 120px;
+   width:80%
+ }
+ 
+ 
+button
+{
+  position:absolute;
+  top:58%;
+  padding:15px;
+  background-color:transparent;
+  color:#fff;
+  cursor:pointer;
+  opacity:.8;
+  border:none
+
+}
+button:hover
+{
+ opacity:.5
+}
+
+
+.next
+{
+   margin-left:86.75%
+}
+
+.welcomeSlider span
+{
+   font-size:15px;
+   word-spacing:normal;
+   position:absolute;
+   left:35px
+}
