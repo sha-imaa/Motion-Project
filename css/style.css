@@ -3,7 +3,9 @@
 body
 {
     margin:0 auto;
-    width:90%
+    width:90%;
+       font-family:Arial,Tahoma
+
 }
 
 header
@@ -23,7 +25,37 @@ h1
    word-spacing:15px
    
 }
-             /* Header's site */
+   
+ h2
+ {
+  color:#fff;
+  text-align:center;
+  white-space:pre-line;
+  word-spacing:7px;
+  line-height:13px;
+  font-size:30px;
+  padding-top:25px
+ }
+ h3
+ {
+    color:#fff;
+    width:300px
+  }
+  article
+  {
+   width:100%;
+   height:400px;
+   background-color:#75d79d;
+   display:flex;
+   justify-content:space-around
+  }
+  h4
+  {
+   color:#75d79d;
+   font-weight:bold;
+   font-size:15px
+  }
+ /* Header's site */
              
 .logoNav
 {
@@ -129,13 +161,13 @@ ul li a:hover:after{
  {
    width:100%;
    background-color:#db684c;
-   height:600px
+   height:500px
  }
  
  .welcomeSlider img
  {
-   margin:150px 0 0 120px;
-   width:80%
+   margin:150px 0 0 240px;
+   width:60%
  }
  
  
@@ -159,7 +191,11 @@ button:hover
 
 .next
 {
-   margin-left:86.75%
+   margin-left:76.75%
+}
+.prev
+{
+  margin-left:12%
 }
 
 .welcomeSlider span
@@ -168,4 +204,190 @@ button:hover
    word-spacing:normal;
    position:absolute;
    left:35px
+}
+                  /* ...Why Us... */
+.creativeWork
+{
+   width:100%;
+   height:400px;
+   background-color:#29211f;
+   color:#db684c;
+   clear:both;
+   padding-top:2px
+}
+
+.creativeWork span,article span
+{
+  color:#db684c;
+  font-size:15px;
+  word-spacing:normal;
+}
+
+.infinity,.fa-gift,.fa-cloud
+{
+  color:#fff;
+  background-color:#db684c;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  padding:15px;
+  position:relative
+}
+
+.infinity:after,
+.iconsDiv i:after
+{
+   
+    content: "";
+    position: absolute;
+    background:transparent;
+    top: 0; bottom: 0; left: 0; right: 0;
+    border-radius: 50%;
+    transition: .3s all;
+    border: 3px solid;
+}
+.infinity:hover:after,
+.iconsDiv i:hover:after
+{
+    -webkit-transform: scale(1.5);
+    opacity:.7;
+    cursor:pointer
+}
+
+.infinity
+{
+ font-size:50px;
+ text-align:center;
+ display:block;
+ height:60px;
+ font-weight:bolder;
+ padding:7px;
+ 
+}
+.multiPurp
+{
+ position:relative;
+ top:40px;
+ right:80px;
+ 
+}
+.multiPurp p
+{
+ width:281px;
+ white-space:pre-line
+}
+
+
+.iconsDiv
+{
+  width:100%;
+  display:flex;
+  justify-content:space-around
+ 
+}
+.iconsDiv div
+{
+ width:25%;
+ float:left;
+ white-space:pre-line;
+ 
+}
+.iconsDiv p
+{
+ position:relative;
+ bottom:60px
+}
+
+
+                     /* Our Experts section */
+ article h2
+ {
+  position:relative;
+  top:100px;
+  line-height:25px;
+  width:300px
+ }
+.flipper
+{
+  width:300px;
+  height:400px;
+  position:relative;
+  top:75px;
+  transform-style:preserve-3d;
+  transition:all 1s ease-in-out;
+  float:left
+}
+
+.flipper:hover
+{
+ transform:rotatey(180deg)
+}
+
+.front,.back
+{
+ width:150px;
+ height:250px;
+ background-color:#fff;
+ border-radius:10px;
+ text-align:center;
+ backface-visibility:hidden;
+ position:absolute;
+ top:0;
+ left:0
+
+}
+
+.front
+{
+ z-index:2;
+ transform:rotatey(0deg)
+}
+
+.back
+{
+ transform:rotatey(180deg);
+ color:#75d79d;
+ padding:10px;
+ color:#db684c;
+  border:dashed 5px #75d79d;
+}
+.front img
+{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  border:solid 5px #75d79d;
+  position:relative;
+}
+
+.front p
+{
+ color:#db684c
+}
+
+.back a
+{
+  background-color:#75d79d;
+  padding:15px;
+  text-decoration:none;
+  border-radius:10px;
+  color:#fff;
+  font-size:15px;
+}
+.back span
+{
+ color:#75d79d;
+ font-size:25px;
+ font-weight:bold
+}
+
+.back a
+{
+ position:relative;
+ top:80px
+}
+
+.fa-twitter
+{
+  padding-right:20px
 }
