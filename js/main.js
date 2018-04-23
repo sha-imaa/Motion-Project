@@ -2,7 +2,7 @@ var slider_container =
   document.getElementById("box");
 
 //Array images' container
-var images=['imgs/slider-1.png','imgs/slider2.PNG','imgs/slider3.png'];
+var images=['imgs/slider-1.png','imgs/slider-2.png','imgs/slider3.png'];
 
 var i = image.length;
 
@@ -39,3 +39,49 @@ function prevSlide(){
   slider_container.innerHTML = "<img src = "+images[i-1]+">";
 }
   prevSlide();
+  
+  
+  
+                 // Slide container code..
+                 
+  var slideIndex=1;
+      showSlide(slideIndex);
+      
+      
+  function plusSlide(n){
+    showSlide(slideIndex += n);
+  }
+  
+  function currentSlide(n){
+    
+    showSlide(slideIndex=n);
+  }
+  
+  
+  function showSlide(n){
+    var i;
+    var slides = document.getElementsByClassName("mySlideFade");
+    var dots = document.getElementsByClassName("dot");
+    
+    if(n > slides.length){
+      slideIndex=1;
+      }
+      
+    if(n < 1){
+      slideIndex=slides.length;
+      }
+    
+            //slides' loop
+    for(i=o;i<slides.length;i++){
+      slides[i].style.display="none";
+    }
+            //bubble dots' loop
+    for(i=o; i < dots.length;i++){
+      dots[i].className= dots[i].className.replace(" active", "");
+        }
+        slide[slideIndex+1].style.display = "block";
+        dots[slideIndex-1].className += "active";
+  }
+  
+  
+  

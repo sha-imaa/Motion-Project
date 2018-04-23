@@ -36,10 +36,18 @@ h1
   font-size:30px;
   padding-top:25px
  }
- h3
+ h3,h5
  {
     color:#fff;
-    width:300px
+    width:300px;
+    font-size:Arial,tahoma;
+    
+  }
+  h5
+  {
+   padding-top:30px;
+   margin:10px 0 0 410px;
+   letter-spacing:3px
   }
   article
   {
@@ -54,6 +62,17 @@ h1
    color:#75d79d;
    font-weight:bold;
    font-size:15px
+  }
+  
+  footer
+  {
+   clear:both;
+   width:100%;
+   height:200px;
+   background-color:#db684c;
+   color:#fff;
+   text-align:center;
+   font-size:25px
   }
  /* Header's site */
              
@@ -106,14 +125,15 @@ h1
 ul
 {
    list-style-type:none;
-   margin-left:480px;
+   margin-left:440px;
    
 }
 
 ul li 
 {
    display:inline-block;
-    margin-top:40px
+    margin-top:40px;
+    
    
 
 }
@@ -161,20 +181,20 @@ ul li a:hover:after{
  {
    width:100%;
    background-color:#db684c;
-   height:500px
+   height:420px
  }
  
  .welcomeSlider img
  {
-   margin:150px 0 0 240px;
-   width:60%
+   margin:100px 0 0 300px;
+   width:50%
  }
  
  
 button
 {
   position:absolute;
-  top:58%;
+  top:50%;
   padding:15px;
   background-color:transparent;
   color:#fff;
@@ -390,4 +410,162 @@ button:hover
 .fa-twitter
 {
   padding-right:20px
+}
+
+            /*  our work looks like..  */
+ 
+ .slideContainer
+ {
+   width:100%;
+   height:500px;
+   clear:both;
+   background-color:#eee;
+   position:relative;
+
+ }
+ 
+ .mySlideFade
+ {
+   width:90%;
+   margin-left:130px;
+   margin-top:90px;
+   display:none
+ }
+  .mySlideFade div
+  {
+    float:left;
+    width:25%;
+    
+  }
+  .slideContainer h4
+  {
+    color:#29211f;
+    white-space:pre-line;
+    text-align:center;
+    font-size:25px
+  }
+  
+  .slideContainer span
+  {
+    color:#75d79d;
+  }
+  
+  .mySlideFade img
+  {
+   width:55%;
+   height:200px
+  }
+ 
+ .beforeSlide,.afterSlide
+
+ {
+  cursor:pointer;
+  position:absolute;
+  top:45%;
+  width:auto;
+  padding:16px;
+  right:20px;
+  font-weight:bold;
+  font-size:18px;
+  transition:0.6s ease;
+  border-radius:0 3px 3px 0
+ }
+
+.beforeSlide
+{
+ right:1100px
+}
+
+.beforeSlide:hover,.afterSlide:hover {
+  background-color:rgba(0,0,0,0.8);
+}
+
+.dot
+{
+  width:16px;
+  height:16px;
+  background-color:#bbb;
+  border-radius:50%;
+  display:inline-block;
+  position:relative;
+  left:430px;
+  top:50px ;
+  text-align:center
+}
+
+.active,.dot:hover {
+  background-color: #717171;
+}
+
+footer p,.twitterAccount span
+{
+  color:#b23526;
+  font-size:20px
+}
+
+footer a i
+{
+  font-size:20px;
+  color:#fff
+}
+
+.copyRights
+{
+  width:95.7%;
+  height:50px;
+  color:#fff;
+  background-color:#413e3d;
+  text-align:left;
+  padding:20px 0 0 50px
+}
+.locationMap 
+{
+  width:100%;
+  height:200px
+}
+
+.locationMap img
+{
+  width:100%;
+  height:200px
+}
+.tooltip
+{
+  position:relative
+}
+.tooltiptext
+{
+  
+  width:300px;
+  background-color:black;
+  color:#fff;
+  text-align:center;
+  border-radius:6px;
+  position:absolute;
+  bottom:200%;
+  right:40%;
+  padding: 10px 10px;
+  z-index:1;
+  transition: opacity 0.3s;
+  opacity:0;
+
+}
+
+ .tooltiptext:before {
+    content: "";
+    position: absolute;
+    border-left:12px solid transparent;
+    border-right:12px solid transparent;
+    border-bottom:12px solid black;
+    height:0;
+    width:0;
+    left:180px;
+    top:-6px;
+    
+}
+
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: .4;
 }
