@@ -51,12 +51,13 @@ function prevSlide(){
   function plusSlide(n){
     showSlide(slideIndex += n);
   }
+  plusSlide();
   
   function currentSlide(n){
     
     showSlide(slideIndex=n);
   }
-  
+  currentSlide();
   
   function showSlide(n){
     var i;
@@ -79,9 +80,8 @@ function prevSlide(){
     for(i=o; i < dots.length;i++){
       dots[i].className= dots[i].className.replace(" active", "");
         }
-        slide[slideIndex+1].style.display = "block";
+        slide[slideIndex-1].style.display = "";
         dots[slideIndex-1].className += "active";
   }
   
-  
-  
+   showSlide();
