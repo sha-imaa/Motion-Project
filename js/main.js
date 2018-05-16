@@ -47,18 +47,20 @@ function prevSlide(){
   var slideIndex=1;
       showSlide(slideIndex);
       
-      
+      //buttons' function
   function plusSlide(n){
-    showSlide(slideIndex += n);
+    showSlide(slideIndex = n+1);
   }
   plusSlide();
   
+  //dots' function
   function currentSlide(n){
     
     showSlide(slideIndex=n);
   }
   currentSlide();
   
+  // function for slides and dots
   function showSlide(n){
     var i;
     var slides = document.getElementsByClassName("mySlideFade");
@@ -73,15 +75,15 @@ function prevSlide(){
       }
     
             //slides' loop
-    for(i=o;i<slides.length;i++){
-      slides[i].style.display="none";
-    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
             //bubble dots' loop
-    for(i=o; i < dots.length;i++){
+    for(i=0; i < dots.length;i++){
       dots[i].className= dots[i].className.replace(" active", "");
         }
-        slide[slideIndex-1].style.display = "";
-        dots[slideIndex-1].className += "active";
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
   }
   
    showSlide();

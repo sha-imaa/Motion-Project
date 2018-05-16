@@ -251,11 +251,11 @@ button:hover
   height:50px;
   border-radius:50%;
   padding:15px;
-  position:relative
+  position:relative;
+  
 }
 
-.infinity:after,
-.iconsDiv i:after
+.infinity:after
 {
    
     content: "";
@@ -500,7 +500,9 @@ button:hover
   bottom:170px ;
 }
 
-.active,.dot:hover {
+.active,
+.dot:hover
+{
   background-color: #717171;
 }
              /* customers' plans */
