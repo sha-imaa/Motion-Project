@@ -45,45 +45,46 @@ function prevSlide(){
                  // Slide container code..
                  
   var slideIndex=1;
-      showSlide(slideIndex);
+      showSlide();
       
       //buttons' function
   function plusSlide(n){
-    showSlide(slideIndex =n+1);
+        "use strict";
+  showSlide(slideIndex = slideIndex + n);
+  showSlide();
   }
   plusSlide();
+
+  
   
   //dots' function
   function currentSlide(n){
-    
+    "use strict";
     showSlide(slideIndex=n);
   }
   currentSlide();
   
   // function for slides and dots
   function showSlide(n){
-    var i;
-    var slides = document.getElementsByClassName("mySlideFade");
-    var dots = document.getElementsByClassName("dot");
+    "use strict";
+     var slides = document.getElementsByClassName("mySlideFade");
+     var dots = document.getElementsByClassName("dot");
+    if (n > slides.length){slideIndex = 1;}
     
-    if(n > slides.length){
-      slideIndex = 1;
-      }
-      
-    if(n < 1){
-      slideIndex = slides.length;
-      }
-    
+    if (n< 1){ slideIndex =slides.length ;}
+   
             //slides' loop
-    for (i = 0; i < slides.length; i++) {
+    for (var i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }
+  
+     slides[slideIndex-1].style.display = "block";
+
             //bubble dots' loop
     for(i=0; i < dots.length ; i++){
-      dots[i].className= dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace(" active", "");
         }
-        slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
-  }
   
-   showSlide();
+  }
+     showSlide();

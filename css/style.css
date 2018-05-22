@@ -505,8 +505,7 @@ button:hover
   bottom:170px ;
 }
 
-.active,
-.dot:hover
+.active,.dot:hover
 {
   background-color: #717171;
 }
